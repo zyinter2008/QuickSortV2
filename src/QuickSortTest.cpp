@@ -5,7 +5,7 @@ using namespace testing;
 
 TEST(QuickSortTest, should_get_array_in_order_when_exec_quick_sort) {
 	QuickSort quickSort;
-	int array[10] = { 4, 6, 3, 6, 7, 8, 2, 1, 5, 9 };
+	int array[10] = { 6, 4, 3, 5, 7, 8, 2, 1, 9, 6 };
 	int *pi = array;
 	quickSort.sort(&pi, 10);
 

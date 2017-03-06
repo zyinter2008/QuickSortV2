@@ -12,20 +12,22 @@ void QuickSort::quickSort(int **array, int leftIndex, int rightIndex) {
 		standard = (*array)[leftIndex];
 
 		do {
-			if((*array)[j] >= standard && i < j){
+			while((*array)[j] >= standard && i < j){
 				j--;
 			}
 
 			if(i < j){
 				(*array)[i] = (*array)[j];
+				i++;
 			}
 
-			if((*array)[i] <= standard && i < j){
+			while((*array)[i] <= standard && i < j){
 				i++;
 			}
 
 			if(i<j){
 				(*array)[j] = (*array)[i];
+				j--;
 			}
 
 		}while(i!=j);
